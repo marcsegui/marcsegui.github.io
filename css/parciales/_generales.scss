@@ -1,0 +1,26 @@
+.bg-color-inicio {
+    background-color: $color-fondo-inicio;
+}
+
+.bg-color-gira {
+    background-color: $color-fondo-gira;
+}
+
+.bg-color-lanzamientos {
+    background-color: $color-fondo-lanzamientos;
+}
+
+.bg-color-contacto {
+    background-color: $color-fondo-contacto;
+}
+
+.section-70vh {
+    height: 70vh;
+}
+
+@font-face {
+    font-family: 'TwinMarker';
+    src: url('/fonts/TwinMarker.ttf') format('TrueType');
+    font-style: normal;
+    font-weight: 400;
+}

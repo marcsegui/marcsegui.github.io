@@ -1,0 +1,313 @@
+.bg-color-inicio {
+  background-color: rgb(255, 204, 242);
+}
+
+.bg-color-gira {
+  background-color: rgb(255, 138, 138);
+}
+
+.bg-color-lanzamientos {
+  background-color: rgb(255, 254, 169);
+}
+
+.bg-color-contacto {
+  background-color: rgb(153, 215, 248);
+}
+
+.section-70vh {
+  height: 70vh;
+}
+
+@font-face {
+  font-family: "TwinMarker";
+  src: url("/fonts/TwinMarker.ttf") format("TrueType");
+  font-style: normal;
+  font-weight: 400;
+}
+header {
+  height: 15vh !important;
+}
+header .nav-link {
+  display: inline-block !important;
+}
+header a.index-titulo {
+  font-size: 1.7rem;
+  font-family: TwinMarker, "Handlee", cursive;
+}
+
+a.line-through {
+  position: relative;
+  font-size: 2.2rem;
+  font-family: jinky, sans-serif;
+}
+
+.line-through.hover::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3.8px;
+  left: 0;
+  top: 45%;
+  background-color: rgb(0, 0, 0);
+  transition: 300ms ease-in-out;
+  pointer-events: none;
+}
+
+.line-through.hover:hover::after {
+  width: 100%;
+}
+
+h3 {
+  font-family: "DM Sans";
+}
+
+input[type=text],
+input[type=email],
+textarea.form-control {
+  border: 1px solid black;
+  border-radius: 0;
+  color: black;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "DM Sans";
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea.form-control:focus {
+  border: 1px solid black;
+  border-radius: 0;
+  color: black;
+  background-color: transparent;
+  outline: 0 none;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(60, 59, 59, 0.6);
+}
+
+textarea.form-control {
+  resize: none;
+  height: 150px;
+}
+
+.form-button {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 0;
+  color: rgb(0, 0, 0);
+  background-color: rgb(193, 179, 240);
+  font-family: "DM Sans";
+}
+.form-button:hover {
+  border: 1px solid black;
+  border-radius: 0;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+.title-gira {
+  max-width: 100%;
+  width: 250px;
+}
+
+.sold-out {
+  width: 80px;
+  opacity: 80%;
+  top: 0;
+}
+
+a.line-through-gira {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-family: "DM Sans";
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.line-through-gira.hover::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  left: 0;
+  top: 42%;
+  background-color: rgb(0, 0, 0);
+  transition: 300ms ease-in-out;
+  pointer-events: none;
+}
+
+.line-through-gira.hover:hover::after {
+  width: 100%;
+}
+
+footer {
+  height: 15vh;
+}
+footer a {
+  font-size: 0.7rem;
+  font-family: "DM Sans";
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+footer a:hover {
+  opacity: 50%;
+}
+footer a img {
+  width: 35px;
+}
+
+.hr {
+  width: 0;
+}
+
+hr::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2.5px;
+  left: 0;
+  top: 50%;
+  background-color: rgb(0, 0, 0);
+  transition: width 1s ease-in-out;
+}
+
+hr.loaded::after {
+  width: 100%;
+}
+
+.clasificacion-lanzamientos {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.image-container-de-mi-pa-ti,
+.image-container-cinco-estrellas,
+.image-container-murakimi,
+.image-container-mariposas,
+.image-container-aaaaaa,
+.image-container-agua-salada,
+.image-container-pinta-y-colorea,
+.image-container-tiroteo-remix {
+  visibility: hidden;
+}
+
+.text-container-de-mi-pa-ti:hover,
+.text-container-cinco-estrellas:hover,
+.text-container-murakimi:hover,
+.text-container-mariposas:hover,
+.text-container-aaaaaa:hover,
+.text-container-agua-salada:hover,
+.text-container-pinta-y-colorea:hover,
+.text-container-tiroteo-remix:hover {
+  opacity: 50%;
+}
+
+.title-lanzamientos {
+  font-family: "DM Sans";
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.d-none {
+  display: none;
+}
+
+.heart {
+  transition: transform 0.2s;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.heart:hover {
+  transform: scale(1.5);
+}
+
+.title-audio {
+  width: 300px;
+}
+.title-audio h6 {
+  font-family: "DM Sans";
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: rgb(255, 254, 169);
+}
+
+audio {
+  width: 300px;
+  height: 45px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(255, 254, 169);
+}
+
+audio::-webkit-controls {
+  display: none;
+}
+
+audio::-webkit-slider-thumb {
+  width: 10px;
+  height: 10px;
+}
+
+audio::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.arrow {
+  width: 30px;
+}
+
+@media (max-width: 575px) {
+  .no-width {
+    width: 0%;
+  }
+}
+.titulo {
+  font-family: TwinMarker, "Handlee", cursive;
+  font-size: 6rem;
+  color: black;
+}
+
+P {
+  font-family: "DM Sans";
+}
+
+#mydiv-1 {
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  z-index: 9;
+  text-align: center;
+}
+
+#mydiv-2 {
+  position: absolute;
+  top: 25%;
+  left: 8%;
+  z-index: 9;
+  text-align: center;
+}
+
+#mydiv-3 {
+  position: absolute;
+  bottom: 70%;
+  left: 65%;
+  z-index: 9;
+  text-align: center;
+}
+
+#mydiv-4 {
+  position: absolute;
+  bottom: 20%;
+  left: 15%;
+  z-index: 9;
+  text-align: center;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,117 @@
+.hr {
+    width: 0;
+}
+
+hr::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2.5px;
+    left: 0;
+    top: 50%;
+    background-color: rgb(0, 0, 0);
+    transition: width 1s ease-in-out;
+}
+
+hr.loaded::after {
+    width: 100%;
+}
+
+.clasificacion-lanzamientos {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.image-container-de-mi-pa-ti,
+.image-container-cinco-estrellas,
+.image-container-murakimi,
+.image-container-mariposas,
+.image-container-aaaaaa,
+.image-container-agua-salada,
+.image-container-pinta-y-colorea,
+.image-container-tiroteo-remix {
+    visibility: hidden;
+}
+
+.text-container-de-mi-pa-ti,
+.text-container-cinco-estrellas,
+.text-container-murakimi,
+.text-container-mariposas,
+.text-container-aaaaaa,
+.text-container-agua-salada,
+.text-container-pinta-y-colorea,
+.text-container-tiroteo-remix {
+    &:hover {
+        opacity: 50%;
+    }
+}
+
+.title-lanzamientos {
+    font-family: "DM Sans";
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.d-none {
+    display: none;
+}
+
+.heart {
+    transition: transform .2s;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    &:hover {
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+}
+
+.title-audio {
+    width: 300px;
+
+    h6 {
+        font-family: "DM Sans";
+    }
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: $color-fondo-lanzamientos;
+}
+
+audio {
+    width: 300px;
+    height: 45px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: $color-fondo-lanzamientos;
+}
+
+audio::-webkit-controls {
+    display: none;
+}
+
+audio::-webkit-slider-thumb {
+    width: 10px;
+    height: 10px;
+}
+
+audio::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.arrow {
+    width: 30px;
+}
+
+
+@media (max-width: 575px) {
+    .no-width {
+        width: 0%;
+    }
+}

@@ -1,0 +1,35 @@
+.title-gira {
+    max-width: 100%;
+    width: 250px;
+}
+
+.sold-out {
+    width: 80px;
+    opacity: 80%;
+    top: 0;
+}
+
+a.line-through-gira {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-family: "DM Sans";
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.line-through-gira.hover::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    top: 42%;
+    background-color: rgb(0, 0, 0);
+    transition: 300ms ease-in-out;
+    pointer-events: none;
+}
+
+.line-through-gira.hover:hover::after {
+    width: 100%;
+}
